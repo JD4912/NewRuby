@@ -4,7 +4,7 @@ files:
   - source: /  
     destination: /root
 permissions:
-  - object: /opt/dev/scripts/UnzipResourceBundle.sh
+  - object: /root/ROR/ROR.sh
     mode: 777
     owner: root
     type:
