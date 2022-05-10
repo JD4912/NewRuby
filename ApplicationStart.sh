@@ -1,7 +1,7 @@
 #!/bin/bash
 # sudo su -
-gem install bundle
 cd /ruby
+gem install bundle
 bundle install
 wait
 pwd
