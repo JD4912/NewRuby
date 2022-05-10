@@ -1,7 +1,5 @@
 #!/usr/bin/sudo bash
-
-lsof -ti:3000 | xargs kill -9
-wait
+sudo su - 
 
 echo "Cleaning Old Data"
 rm -rf /ruby
@@ -12,7 +10,7 @@ git clone https://github.com/JD4912/test_project.git /ruby
 wait
 
 echo "Set Ruby ENV"
-#rbenv global 3.0.2
+rbenv global 2.7.2
 gem install bundler
 wait
 
