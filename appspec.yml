@@ -1,0 +1,11 @@
+version: 0.0  
+os: linux  
+files:  
+  - source: /  
+    destination: /root
+permissions:
+  - object: /opt/dev/scripts/UnzipResourceBundle.sh
+    mode: 777
+    owner: root
+    type:
+      - file  
