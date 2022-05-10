@@ -13,5 +13,11 @@ files:
 hooks:
   BeforeInstall:  
     - location: BeforeInstall.sh
-      timeout: 1800  
+      
+      runas: root 
+      
+
+  ApplicationStart:  
+    - location: ApplicationStart.sh
+      
       runas: root 
