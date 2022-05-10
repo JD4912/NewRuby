@@ -14,8 +14,8 @@ cd /ruby && rm -rf Gemfile.lock
 wait
 
 echo "Set Ruby ENV"
-rbenv install 2.7.2
-rbenv global 2.7.2
+# rbenv install 2.7.2
+# rbenv global 2.7.2
 gem install bundler
 wait
 
