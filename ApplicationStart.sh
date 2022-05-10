@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo su -
+# sudo su -
 gem install bundle
 cd /ruby
 bundle install
