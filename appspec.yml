@@ -14,10 +14,10 @@ hooks:
   BeforeInstall:  
     - location: BeforeInstall.sh
       
-      runas: root 
+#       runas: root 
       
 
   ApplicationStart:  
     - location: ApplicationStart.sh
       
-      runas: root 
+#       runas: root 
