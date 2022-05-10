@@ -9,7 +9,12 @@ echo "Cloning new changes"
 git clone https://github.com/JD4912/NewRuby.git /ruby
 wait
 
+echo "Remove Old Gemfile.lock file"
+cd /ruby && rm -rf Gemfile.lock
+wait
+
 echo "Set Ruby ENV"
+rbenv install 2.7.2
 rbenv global 2.7.2
 gem install bundler
 wait
