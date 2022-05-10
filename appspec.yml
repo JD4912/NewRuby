@@ -2,7 +2,7 @@ version: 0.0
 os: linux  
 files:  
   - source: /  
-    destination: /root
+    destination: /root/ROR
 permissions:
   - object: /root/ROR/ROR.sh
     mode: 777
