@@ -6,7 +6,7 @@ rm -rf /ruby
 wait
 
 echo "Cloning new changes"
-git clone https://github.com/JD4912/test_project.git /ruby
+git clone https://github.com/JD4912/NewRuby.git /ruby
 wait
 
 echo "Set Ruby ENV"
