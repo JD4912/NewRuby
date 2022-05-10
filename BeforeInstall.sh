@@ -20,7 +20,8 @@ gem install bundler
 wait
 
 echo "Installing dependency"
-cd /ruby && bundle install
+cd /ruby
+bundle install
 wait
 
 echo "Starting rails server"
