@@ -1,7 +1,7 @@
 #!/bin/bash
 # sudo su -
 gem install bundle
-# cd /ruby
+cd /ruby
 bundle install
 wait
 gem install rails -v 6.1.5
