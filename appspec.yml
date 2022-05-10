@@ -12,12 +12,10 @@ files:
 
 hooks:
   BeforeInstall:  
-    - location: BeforeInstall.sh
-      
-#       runas: root 
+    - location: BeforeInstall.sh   
+      runas: root 
       
 
   ApplicationStart:  
     - location: ApplicationStart.sh
-      
-#       runas: root 
+      runas: root 
