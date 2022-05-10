@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo su -
 cd /ruby
 bundle install
 wait
