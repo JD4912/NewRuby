@@ -1,5 +1,5 @@
 #!/usr/bin/sudo bash
-sudo su - 
+# sudo su - 
 
 echo "Cleaning Old Data"
 rm -rf /ruby
