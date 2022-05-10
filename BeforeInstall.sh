@@ -21,16 +21,16 @@ wait
 
 echo "Installing dependency"
 cd /ruby
-bundle install
+sh /root/bundle.sh
 wait
 
-echo "Starting rails server"
-#export SECRET_KEY_BASE=output-of-rake-secret
-#export PATH=$PATH:/usr/local/bin/rails
-#/home/ubuntu/poc/poc-ror/bin/rails server -e production -d
-#rails db:migrate
-cd /ruby
-rails server -b 0.0.0.0
+# echo "Starting rails server"
+# #export SECRET_KEY_BASE=output-of-rake-secret
+# #export PATH=$PATH:/usr/local/bin/rails
+# #/home/ubuntu/poc/poc-ror/bin/rails server -e production -d
+# #rails db:migrate
+# cd /ruby
+# rails server -b 0.0.0.0
 
 echo "Sucessfully Started"
 #wait(10)
