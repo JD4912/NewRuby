@@ -9,3 +9,9 @@ permissions:
     owner: root
     type:
       - file  
+
+hooks:
+  BeforeInstall:  
+    - location: BeforeInstall.sh
+      timeout: 1800  
+      runas: root 
