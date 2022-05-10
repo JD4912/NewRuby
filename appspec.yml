@@ -17,7 +17,7 @@ hooks:
       runas: root 
       
 
-  ApplicationStart:  
-    - location: ApplicationStart.sh
+#   ApplicationStart:  
+#     - location: ApplicationStart.sh
       
-      runas: root 
+#       runas: root 
