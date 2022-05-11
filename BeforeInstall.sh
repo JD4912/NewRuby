@@ -10,19 +10,19 @@ git clone https://github.com/JD4912/NewRuby.git /ruby
 wait
 
 echo "Remove Old Gemfile.lock file"
-cd /ruby && rm -rf Gemfile.lock
+cd /Newruby && rm -rf Gemfile.lock
 wait
 
-echo "Set Ruby ENV"
-# rbenv install 2.7.2
-# rbenv global 2.7.2
-gem install bundler
-wait
+# echo "Set Ruby ENV"
+# # rbenv install 2.7.2
+# # rbenv global 2.7.2
+# gem install bundler
+# wait
 
-echo "Installing dependency"
-cd /ruby
-sh /root/bundle.sh
-wait
+# echo "Installing dependency"
+# cd /ruby
+# sh /root/bundle.sh
+# wait
 
 # echo "Starting rails server"
 # #export SECRET_KEY_BASE=output-of-rake-secret
