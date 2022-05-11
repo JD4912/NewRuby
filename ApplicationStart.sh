@@ -5,7 +5,6 @@ rbenv install 2.7.2
 rbenv use 2.7.2
 gem install bundle
 bundle install
-wait
 pwd
 ls -ltrh
 whoami
