@@ -8,6 +8,8 @@ bundle install
 pwd
 ls -ltrh
 whoami
+sudo su -
 ruby -v
 gem install rails -v 6.1.5
+cd /Newruby
 rails server -b 0.0.0.0
