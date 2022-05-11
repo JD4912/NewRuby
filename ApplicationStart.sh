@@ -1,6 +1,6 @@
 #!/bin/bash
 # sudo su -source /usr/bin/ruby2.7 
-source /usr/bin/ruby2.7 
+source /usr/bin/ruby
 cd /Newruby
 # rbenv install 2.7.2
 # rbenv use 2.7.2
