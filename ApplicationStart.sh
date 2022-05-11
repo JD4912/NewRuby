@@ -1,6 +1,6 @@
 #!/bin/bash
 # sudo su -
-cd /ruby
+cd /Newruby
 # rbenv install 2.7.2
 # rbenv use 2.7.2
 gem install bundle
