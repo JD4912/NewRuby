@@ -3,12 +3,12 @@ os: linux
 files:  
   - source: /  
     destination: /root/ROR
-# permissions:
-#   - object: /root/ROR/ROR.sh
-#     mode: 777
-#     owner: root
-#     type:
-#       - file  
+permissions:
+  - object: /root/ROR/ROR.sh
+    mode: 777
+    owner: root
+    type:
+      - file  
 
 hooks:
   BeforeInstall:  
