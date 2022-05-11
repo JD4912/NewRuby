@@ -2,11 +2,11 @@
 # sudo su - 
 
 echo "Cleaning Old Data"
-rm -rf /ruby
+rm -rf /Newruby
 wait
 
 echo "Cloning new changes"
-git clone https://github.com/JD4912/NewRuby.git /ruby
+git clone https://github.com/JD4912/NewRuby.git /Newruby
 wait
 
 echo "Remove Old Gemfile.lock file"
