@@ -1,21 +1,37 @@
 version: 0.0  
 os: linux  
-files:  
-  - source: /  
-    destination: /root/ROR
-permissions:
-  - object: /root/ROR/ROR.sh
-    mode: 777
-    owner: root
-    type:
-      - file  
 
-hooks:
-  BeforeInstall:  
-    - location: BeforeInstall.sh   
-      runas: root 
+phases:
+  install:
+    commands:
+      - echo "clean old data"
+      - rm -rf /Newruby
+      - echo "cloning New code"
+      - git clone https://github.com/JD4912/NewRuby.git /Newruby
+      - echo "change cloned directory"
+      - cd /Newruby
+      - echo "Remove old Gemfile.lock"
+      - rm -rf Gemfile.lock
+
+
+
+
+# files:  
+#   - source: /  
+#     destination: /root/ROR
+# permissions:
+#   - object: /root/ROR/ROR.sh
+#     mode: 777
+#     owner: root
+#     type:
+#       - file  
+
+# hooks:
+#   BeforeInstall:  
+#     - location: BeforeInstall.sh   
+#       runas: root 
       
 
-  ApplicationStart:  
-    - location: ApplicationStart.sh
-#       runas: root 
+#   ApplicationStart:  
+#     - location: ApplicationStart.sh
+# #       runas: root 
