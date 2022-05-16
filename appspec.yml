@@ -1,4 +1,4 @@
-version: 0.0
+version: 0.a
 os: linux
 # phases: 
 #   pre_build:
@@ -49,22 +49,22 @@ os: linux
 
 
 
-files:  
-  - source: /  
-    destination: /root/ROR
-permissions:
-  - object: /root/ROR/ROR.sh
-    mode: 777
-    owner: root
-    group: root
-    type:
-      - file
-      - directory 
+# files:  
+#   - source: /  
+#     destination: /root/ROR
+# permissions:
+#   - object: /root/ROR/ROR.sh
+#     mode: 777
+#     owner: root
+#     group: root
+#     type:
+#       - file
+#       - directory 
 
 hooks:
-#   BeforeInstall:  
-#     - location: BeforeInstall.sh   
-#       runas: root 
+  BeforeInstall:  
+    - location: BeforeInstall.sh   
+      runas: root 
       
 
 #   ApplicationStart:  
