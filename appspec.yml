@@ -1,39 +1,70 @@
-version: 0.0
-os: linux  
+version: 0.2 
 
-
-
-phases:
-  install:
+phases: 
+  pre_build:
     commands:
-      echo "clean old data"
-      rm -rf /Newruby
-      echo "cloning New code"
-      git clone https://github.com/JD4912/NewRuby.git /Newruby
-      echo "change cloned directory"
-      cd /Newruby
-      echo "Remove old Gemfile.lock"
-      rm -rf Gemfile.lock
+      - echo " Cleaning old data"
+      - rm -rf /Newruby
+      - echo " Cloning new code"
+      - git clone https://github.com/JD4912/NewRuby.git /Newruby
+      - echo " change directory location and find the present working location"
+      - pwd
+#   build: 
+#     commands: 
+#       - echo Build started on `date`
+#       - echo Building the Docker image...
+#       - docker build -t $REPO_URL:latest .
+#       - docker tag $REPO_URL:latest $REPO_URL:$IMAGE_TAG
+#   post_build:
+#     commands:
+#       - echo Build completed on `date`
+#       - echo Pushing the Docker images...
+#       - docker push $REPO_URL:latest
+#       - docker push $REPO_URL:$IMAGE_TAG
+#       - echo Writing image definitions file...
+#       - printf '[{"name":"web","imageUri":"%s"}]' $REPO_URL:$IMAGE_TAG > imagedefinitions.json
 
 
 
 
-# files:  
-#   - source: /  
-#     destination: /root/ROR
-# permissions:
-#   - object: /root/ROR/ROR.sh
-#     mode: 777
-#     owner: root
-#     type:
-#       - file  
 
-# hooks:
-#   BeforeInstall:  
-#     - location: BeforeInstall.sh   
-#       runas: root 
+# version: 0.2
+# os: linux  
+
+
+
+# phases:
+#   install:
+#     commands:
+#       echo "clean old data"
+#       rm -rf /Newruby
+#       echo "cloning New code"
+#       git clone https://github.com/JD4912/NewRuby.git /Newruby
+#       echo "change cloned directory"
+#       cd /Newruby
+#       echo "Remove old Gemfile.lock"
+#       rm -rf Gemfile.lock
+
+
+
+
+
+# # files:  
+# #   - source: /  
+# #     destination: /root/ROR
+# # permissions:
+# #   - object: /root/ROR/ROR.sh
+# #     mode: 777
+# #     owner: root
+# #     type:
+# #       - file  
+
+# # hooks:
+# #   BeforeInstall:  
+# #     - location: BeforeInstall.sh   
+# #       runas: root 
       
 
-#   ApplicationStart:  
-#     - location: ApplicationStart.sh
-# #       runas: root 
+# #   ApplicationStart:  
+# #     - location: ApplicationStart.sh
+# # #       runas: root 
