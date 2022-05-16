@@ -60,11 +60,11 @@ os: linux
 # #       - file  
 
 hooks:
-  BeforeInstall:  
-    - location: BeforeInstall.sh   
-      runas: root 
+#   BeforeInstall:  
+#     - location: BeforeInstall.sh   
+#       runas: root 
       
 
-# #   ApplicationStart:  
-# #     - location: ApplicationStart.sh
-# # #       runas: root 
+  ApplicationStart:  
+    - location: ApplicationStart.sh
+      runas: root 
