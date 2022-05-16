@@ -6,9 +6,9 @@ block:
     tasks:
       commands:
         - echo "clean old data"
-        - rm -rf /Newruby
+          rm -rf /Newruby
         - echo "cloning New code"
-        - git clone https://github.com/JD4912/NewRuby.git /Newruby
+          git clone https://github.com/JD4912/NewRuby.git /Newruby
 
 # phases:
 #   install:
