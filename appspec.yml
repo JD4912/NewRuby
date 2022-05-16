@@ -49,15 +49,17 @@ os: linux
 
 
 
-# # files:  
-# #   - source: /  
-# #     destination: /root/ROR
-# # permissions:
-# #   - object: /root/ROR/ROR.sh
-# #     mode: 777
-# #     owner: root
-# #     type:
-# #       - file  
+files:  
+  - source: /  
+    destination: /root/ROR
+permissions:
+  - object: /root/ROR/ROR.sh
+    mode: 777
+    owner: root
+    group: root
+    type:
+      - file
+      - directory 
 
 hooks:
 #   BeforeInstall:  
@@ -65,6 +67,6 @@ hooks:
 #       runas: root 
       
 
-  ApplicationStart:  
-    - location: ApplicationStart.sh
-      runas: root 
+#   ApplicationStart:  
+#     - location: ApplicationStart.sh
+#       runas: root 
