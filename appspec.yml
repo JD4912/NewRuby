@@ -1,26 +1,19 @@
 version: 0.0
 os: linux  
 
-block:
-  - name: "Deploy RUBY on RAILS using Code-deploy
-    tasks:
-      commands:
-        - echo "clean old data"
-          rm -rf /Newruby
-        - echo "cloning New code"
-          git clone https://github.com/JD4912/NewRuby.git /Newruby
 
-# phases:
-#   install:
-#     commands:
-#       - echo "clean old data"
-#       - rm -rf /Newruby
-#       - echo "cloning New code"
-#       - git clone https://github.com/JD4912/NewRuby.git /Newruby
-#       - echo "change cloned directory"
-#       - cd /Newruby
-#       - echo "Remove old Gemfile.lock"
-#       - rm -rf Gemfile.lock
+
+phases:
+  install:
+    commands:
+      echo "clean old data"
+      rm -rf /Newruby
+      echo "cloning New code"
+      git clone https://github.com/JD4912/NewRuby.git /Newruby
+      echo "change cloned directory"
+      cd /Newruby
+      echo "Remove old Gemfile.lock"
+      rm -rf Gemfile.lock
 
 
 
